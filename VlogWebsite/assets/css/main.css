@@ -39,6 +39,44 @@
 }
 
 /*dark-mode*/
+.solar{
+	--prm-text : #ed786a;
+	--sec-text: rgb(165, 164, 164) ;
+	--ters-text: rgb(144, 142, 142);
+	--qurt-text: rgb(192, 192, 192);
+	--sena-text : #fff;
+	--prim-bg:  #eee4aa;
+	--secn-bg:  #ffee8d;
+	--ters-bg: #333739;
+	--qurt-bg:#444;
+	--sena-bg:#878787;
+	--prm-border: rgb(121, 128, 131) !important; 
+	--sec-border: #363A3C;
+	--ters-border: #ddd;
+}
+
+
+/*dark-mode*/
+.light{ 
+	/*light-mode*/
+	
+		--prm-text : #ed786a;
+		--sec-text: rgb(136, 136, 136) ;
+		--ters-text: rgb(102, 102, 102);
+		--qurt-text: rgb(109, 107, 107);
+		--sena-text : #fff;
+		--prim-bg: #fff;
+		--secn-bg: #f0f0f0;
+		--ters-bg: rgb(207, 207, 207) ;
+		--qurt-bg:rgb(182, 176, 176);
+		--sena-bg:#878787;
+		--prm-border: #e5e5e5;
+		--sec-border: #ebebeb;
+		--ters-border: #ddd;
+	}
+
+
+/*dark-mode*/
 .dark{
 	--prm-text : #ed786a;
 	--sec-text: rgb(165, 164, 164) ;
@@ -270,6 +308,7 @@ input, select, textarea {
 	br.clear {
 		clear: both;
 	}
+
 
 /* Container */
 

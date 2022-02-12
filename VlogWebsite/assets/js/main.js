@@ -63,31 +63,38 @@
 // theme switch
 
 // DOM Elements
-
-const darkButton = document.getElementById('dark');
+const solarButton = document.getElementById('solar');
 const lightButton = document.getElementById('light');
-const solarButton = document.getElementById('nighty');
+const darkButton = document.getElementById('dark');
+const nightyButton = document.getElementById('nighty');
 const body = document.body;
 
 
 
+solarButton.onclick = () => {
+	document.getElementById("theme").classList.remove("light","dark","dark-night"); 
+	document.getElementById("theme").classList.add("solar");
+	localStorage.setItem('theme', 'solar');
+
+};
+
+
 lightButton.onclick = () => {
-	document.getElementById("theme").classList.remove("dark","dark-night"); 
+	document.getElementById("theme").classList.remove("solar","dark","dark-night"); 
 	document.getElementById("theme").classList.add("light");
 	localStorage.setItem('theme', 'light');
-	console.log("light button")
 
 };
 
 darkButton.onclick = () => {
-	document.getElementById("theme").classList.remove("light","dark-night"); 
+	document.getElementById("theme").classList.remove("solar","light","dark-night"); 
 	document.getElementById("theme").classList.add("dark");
 	localStorage.setItem('theme', 'dark');
 
 };
 
-solarButton.onclick = () => {
-	document.getElementById("theme").classList.remove("light","dark"); 
+nightyButton.onclick = () => {
+	document.getElementById("theme").classList.remove( "solar","light","dark"); 
 	document.getElementById("theme").classList.add("dark-night");
 	localStorage.setItem('theme', 'dark-night');
 
@@ -95,7 +102,7 @@ solarButton.onclick = () => {
 
 const theme = localStorage.getItem('theme');
 if (theme) {
-	document.getElementById("theme").classList.remove("light","dark","dark-night"); 
+	document.getElementById("theme").classList.remove("solar","light","dark","dark-night"); 
 	body.classList.add(theme);
 	
 }

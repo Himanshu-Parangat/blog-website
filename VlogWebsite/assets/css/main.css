@@ -2922,5 +2922,62 @@ input, select, textarea {
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
+
+  .toggleTheme{
+	  display: none;
+  }
+
+  .toggleTheme:hover{
+	  background: var(--prm-text);
+  }
   
-  
+  @media (max-width:980px){
+	.toggleTheme{
+		display: inline-block;
+		text-decoration: none;
+		display: block;
+		width: 60px;
+		height: 40px;
+		background: rgba(232, 232, 232, 0.9);
+		border-radius: 4px;
+		position: absolute;
+		left: 5px;
+		top: 55px;
+		box-shadow: 0.125em 0.125em 0 0 rgba(0, 0, 0, 0.15);
+		text-align: center;
+
+	
+
+	
+  }
+
+  }
+
+
+  @media (max-width:980px){
+	  
+	  .dropdown {
+		position: relative;
+		display: inline-block;
+		align-items: left;
+		background: rgba(232, 232, 232, 0);
+		height: 60px;
+		width: 40px;
+		border-radius: 4px;
+		align-items: center;
+		
+	  }
+  }
+
+  @media (max-width:980px){
+
+	.dropdown a{
+		color:var(--qurt-text);
+	}
+  }
+
+
+
+
+ 
+ 

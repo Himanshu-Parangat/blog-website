@@ -107,3 +107,50 @@ if (theme) {
 	
 }
   
+
+// side button
+
+// DOM Elements
+const solarSButton = document.getElementById('solarSB');
+const lightSButton = document.getElementById('lightSB');
+const darkSButton = document.getElementById('darkSB');
+const nightySButton = document.getElementById('nightySB');
+
+
+
+
+solarSButton.onclick = () => {
+	document.getElementById("theme").classList.remove("light","dark","dark-night"); 
+	document.getElementById("theme").classList.add("solar");
+	localStorage.setItem('theme', 'solar');
+
+};
+
+
+lightSButton.onclick = () => {
+	document.getElementById("theme").classList.remove("solar","dark","dark-night"); 
+	document.getElementById("theme").classList.add("light");
+	localStorage.setItem('theme', 'light');
+
+};
+
+darkSButton.onclick = () => {
+	document.getElementById("theme").classList.remove("solar","light","dark-night"); 
+	document.getElementById("theme").classList.add("dark");
+	localStorage.setItem('theme', 'dark');
+
+};
+
+nightySButton.onclick = () => {
+	document.getElementById("theme").classList.remove( "solar","light","dark"); 
+	document.getElementById("theme").classList.add("dark-night");
+	localStorage.setItem('theme', 'dark-night');
+
+};
+
+if (theme) {
+	document.getElementById("theme").classList.remove("solar","light","dark","dark-night"); 
+	body.classList.add(theme);
+	
+}
+  

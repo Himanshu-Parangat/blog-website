@@ -352,8 +352,13 @@
 						<div class="row">
 							<div class="col-6 col-12-medium">
 								<section>
-									<form name="contact me" method="post" data-netlify="true">
+									<form name="contact me" method="post" data-netlify="true" netlify-honeypot="bot-field">
 										<div class="row gtr-50">
+											<p hidden>
+												<label>
+												  Don’t fill this out if you’re human: <input name="bot-field" />
+												</label>
+											</p>
 											<div class="col-6 col-12-small">
 												<input name="name" placeholder="Name" type="text" />
 											</div>
